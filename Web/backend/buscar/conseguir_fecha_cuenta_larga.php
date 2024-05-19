@@ -37,6 +37,7 @@ if ($number1 > 19) {
 } elseif ($number1 < 0) {
     $number1 = 20+ $number1;
     $pivot = -1;
+    
 }
 
 $number2 = 15 + $number_2 + $pivot; 
