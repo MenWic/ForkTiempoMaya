@@ -1,0 +1,53 @@
+
+.calendario {
+    position: relative;
+    width: 800px; /* Aumentamos el tamaño del contenedor principal */
+    height: 800px;
+    margin: auto;
+    top: 50px;
+}
+
+.tzolkin-circulo, .numeros-circulo {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border-radius: 50%;
+    transition: transform 0.1s linear; /* Añadimos una transición suave */
+    z-index: 1; /* Añadimos un z-index para asegurar la clicabilidad */
+}
+
+.tzolkin-circulo {
+    width: 400px; /* Aumentamos el tamaño del círculo Tzolk'in */
+    height: 200px;
+    transform-origin: center center; /* Establece el punto de origen en el centro */
+    z-index: 2; /* Aseguramos que esté encima del círculo de números */
+}
+
+.numeros-circulo {
+    filter: invert(100%);
+    transform-origin: center center; /* Establece el punto de origen en el centro */
+    width: 400px; /* Ajustamos el tamaño del círculo de números */
+    height: 200px;
+}
+
+.tzolkin-signo, .numero {
+    position: absolute;
+    width: 50px;
+    height: 50px;
+    text-align: center;
+    line-height: 50px;
+    transition: transform 0.5s ease-in-out; /* Añadimos la transición aquí */
+}
+
+.tzolkin-signo img, .numero img {
+    width: 100%;
+    height: 100%;
+    cursor: pointer;
+}
+#currentSymbol {
+    margin-top: 20px;
+    text-align: center;
+    font-size: 20px;
+    color: white;
+}

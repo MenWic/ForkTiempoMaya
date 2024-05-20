@@ -1,8 +1,9 @@
-
 #formulario {
     background: rgba(63, 64, 66, 0.7);
     transition: 0.5s;
     width: 50%;
+    position: relative;
+    z-index: 999; /* Asegura que el formulario esté por encima del vídeo */
 }
 #formulario h1{
     margin: 30px;
