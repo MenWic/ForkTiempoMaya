@@ -1,9 +1,9 @@
 --
 -- Base de datos: `tiempomaya`
 --
-DROP DATABASE IF EXISTS `tiempomaya`;
-CREATE DATABASE IF NOT EXISTS `tiempomaya` DEFAULT CHARACTER SET utf8mb4 COLLATE utf8mb4_0900_ai_ci;
-USE `tiempomaya`;
+DROP DATABASE IF EXISTS `tiempo_maya`;
+CREATE DATABASE IF NOT EXISTS `tiempo_maya` DEFAULT CHARACTER SET utf8mb4 COLLATE utf8mb4_0900_ai_ci;
+USE `tiempo_maya`;
 
 -- --------------------------------------------------------
 
@@ -446,3 +446,15 @@ ALTER TABLE `uinal`
 ALTER TABLE `acontecimiento` 
     ADD COLUMN `descripcion` VARCHAR(45) NULL AFTER `categoria`;
 
+-- CAMBIOS NUEVOS (FORK MenWIc)
+-- Agregar columna "imagen" a la tabla "energia"
+ALTER TABLE energia ADD COLUMN imagen VARCHAR(255);
+
+-- Agregar columna "imagen" a la tabla "kin"
+ALTER TABLE kin ADD COLUMN imagen VARCHAR(255);
+
+-- Agregar columna "imagen" a la tabla "nahual"
+ALTER TABLE nahual ADD COLUMN imagen VARCHAR(255);
+
+-- Agregar columna "imagen" a la tabla "uinal"
+ALTER TABLE uinal ADD COLUMN imagen VARCHAR(255);

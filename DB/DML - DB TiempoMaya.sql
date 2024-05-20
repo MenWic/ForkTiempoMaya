@@ -1,5 +1,4 @@
-USE 'tiempomaya';
-
+USE `tiempo_maya`;
 --
 -- Base de datos: `tiempomaya`
 --
@@ -325,3 +324,85 @@ UPDATE `uinal` SET `ruta`='src/imagenesWinales/15.png' WHERE `idweb`='15';
 UPDATE `uinal` SET `ruta`='src/imagenesWinales/16.png' WHERE `idweb`='16';
 UPDATE `uinal` SET `ruta`='src/imagenesWinales/17.png' WHERE `idweb`='17';
 UPDATE `uinal` SET `ruta`='src/imagenesWinales/18.png' WHERE `idweb`='18';
+
+-- Agregacion de rutas al nuevo campo "imagen"
+-- Modificacion: Igreso de ruta de imagen (Tabla: Energía)
+UPDATE energia SET imagen = '../img/energias/0.png' WHERE id = 0;
+UPDATE energia SET imagen = '../img/energias/1.png' WHERE id = 1;
+UPDATE energia SET imagen = '../img/energias/2.png' WHERE id = 2;
+UPDATE energia SET imagen = '../img/energias/3.png' WHERE id = 3;
+UPDATE energia SET imagen = '../img/energias/4.png' WHERE id = 4;
+UPDATE energia SET imagen = '../img/energias/5.png' WHERE id = 5;
+UPDATE energia SET imagen = '../img/energias/6.png' WHERE id = 6;
+UPDATE energia SET imagen = '../img/energias/7.png' WHERE id = 7;
+UPDATE energia SET imagen = '../img/energias/8.png' WHERE id = 8;
+UPDATE energia SET imagen = '../img/energias/9.png' WHERE id = 9;
+UPDATE energia SET imagen = '../img/energias/10.png' WHERE id = 10;
+UPDATE energia SET imagen = '../img/energias/11.png' WHERE id = 11;
+UPDATE energia SET imagen = '../img/energias/12.png' WHERE id = 12;
+UPDATE energia SET imagen = '../img/energias/13.png' WHERE id = 13;
+
+-- Modificacion: Igreso de ruta de imagen (Tabla: Kin)
+UPDATE kin SET imagen = '../img/kin/imix.png' WHERE id = 0;
+UPDATE kin SET imagen = '../img/kin/ik.png' WHERE id = 1;
+UPDATE kin SET imagen = '../img/kin/akbal.png' WHERE id = 2;
+UPDATE kin SET imagen = '../img/kin/kan.png' WHERE id = 3;
+UPDATE kin SET imagen = '../img/kin/imix.png' WHERE id = 4;
+UPDATE kin SET imagen = '../img/kin/kimi.png' WHERE id = 5;
+UPDATE kin SET imagen = '../img/kin/manik.png' WHERE id = 6;
+UPDATE kin SET imagen = '../img/kin/lamat.png' WHERE id = 7;
+UPDATE kin SET imagen = '../img/kin/muluk.png' WHERE id = 8;
+UPDATE kin SET imagen = '../img/kin/ok.png' WHERE id = 9;
+UPDATE kin SET imagen = '../img/kin/chuwen.png' WHERE id = 10;
+UPDATE kin SET imagen = '../img/kin/eb.png' WHERE id = 11;
+UPDATE kin SET imagen = '../img/kin/ben.png' WHERE id = 12;
+UPDATE kin SET imagen = '../img/kin/ix.png' WHERE id = 13;
+UPDATE kin SET imagen = '../img/kin/men.png' WHERE id = 14;
+UPDATE kin SET imagen = '../img/kin/kib.png' WHERE id = 15;
+UPDATE kin SET imagen = '../img/kin/kaban.png' WHERE id = 16;
+UPDATE kin SET imagen = '../img/kin/etznab.png' WHERE id = 17;
+UPDATE kin SET imagen = '../img/kin/kawak.png' WHERE id = 18;
+UPDATE kin SET imagen = '../img/kin/ajaw.png' WHERE id = 19;
+
+-- Modificacion: Igreso de ruta de imagen (Tabla: Nahual)
+UPDATE nahual SET imagen = '../img/nahuales/tzikin.png' WHERE idweb = 0;
+UPDATE nahual SET imagen = '../img/nahuales/ajmaq.png' WHERE idweb = 1;
+UPDATE nahual SET imagen = '../img/nahuales/noj.png' WHERE idweb = 2;
+UPDATE nahual SET imagen = '../img/nahuales/tijax.png' WHERE idweb = 3;
+UPDATE nahual SET imagen = '../img/nahuales/kawoq.png' WHERE idweb = 4;
+UPDATE nahual SET imagen = '../img/nahuales/ajpu.png' WHERE idweb = 5;
+UPDATE nahual SET imagen = '../img/nahuales/imox.png' WHERE idweb = 6;
+UPDATE nahual SET imagen = '../img/nahuales/iq.png' WHERE idweb = 7;
+UPDATE nahual SET imagen = '../img/nahuales/aqabal.png' WHERE idweb = 8;
+UPDATE nahual SET imagen = '../img/nahuales/kat.png' WHERE idweb = 9;
+UPDATE nahual SET imagen = '../img/nahuales/kan.png' WHERE idweb = 10;
+UPDATE nahual SET imagen = '../img/nahuales/kame.png' WHERE idweb = 11;
+UPDATE nahual SET imagen = '../img/nahuales/kej.png' WHERE idweb = 12;
+UPDATE nahual SET imagen = '../img/nahuales/qanil.png' WHERE idweb = 13;
+UPDATE nahual SET imagen = '../img/nahuales/toj.png' WHERE idweb = 14;
+UPDATE nahual SET imagen = '../img/nahuales/tzi.png' WHERE idweb = 15;
+UPDATE nahual SET imagen = '../img/nahuales/batz.png' WHERE idweb = 16;
+UPDATE nahual SET imagen = '../img/nahuales/e.png' WHERE idweb = 17;
+UPDATE nahual SET imagen = '../img/nahuales/aj.png' WHERE idweb = 18;
+UPDATE nahual SET imagen = '../img/nahuales/ix.png' WHERE idweb = 19;
+
+-- Modificacion: Igreso de ruta de imagen (Tabla: Uinal)
+UPDATE uinal SET imagen = '../img/uinales/wayeb.png' WHERE idweb = 0;
+UPDATE uinal SET imagen = '../img/uinales/pop.png' WHERE idweb = 1;
+UPDATE uinal SET imagen = '../img/uinales/woo.png' WHERE idweb = 2;
+UPDATE uinal SET imagen = '../img/uinales/zip.png' WHERE idweb = 3;
+UPDATE uinal SET imagen = '../img/uinales/sotz.png' WHERE idweb = 4;
+UPDATE uinal SET imagen = '../img/uinales/tzek.png' WHERE idweb = 5;
+UPDATE uinal SET imagen = '../img/uinales/xul.png' WHERE idweb = 6;
+UPDATE uinal SET imagen = '../img/uinales/yaxkin.png' WHERE idweb = 7;
+UPDATE uinal SET imagen = '../img/uinales/mol.png' WHERE idweb = 8;
+UPDATE uinal SET imagen = '../img/uinales/chen.png' WHERE idweb = 9;
+UPDATE uinal SET imagen = '../img/uinales/yax.png' WHERE idweb = 10;
+UPDATE uinal SET imagen = '../img/uinales/sak.png' WHERE idweb = 11;
+UPDATE uinal SET imagen = '../img/uinales/keh.png' WHERE idweb = 12;
+UPDATE uinal SET imagen = '../img/uinales/tzek.png' WHERE idweb = 13;
+UPDATE uinal SET imagen = '../img/uinales/kankin.png' WHERE idweb = 14;
+UPDATE uinal SET imagen = '../img/uinales/muwan.png' WHERE idweb = 15;
+UPDATE uinal SET imagen = '../img/uinales/pax.png' WHERE idweb = 16;
+UPDATE uinal SET imagen = '../img/uinales/kayab.png' WHERE idweb = 17;
+UPDATE uinal SET imagen = '../img/uinales/kumku.png' WHERE idweb = 18;
