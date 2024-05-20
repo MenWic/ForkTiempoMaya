@@ -18,17 +18,23 @@
 }
 
 .tzolkin-circulo {
-    width: 400px; /* Aumentamos el tamaño del círculo Tzolk'in */
-    height: 200px;
+    width: 300px; /* Aumentamos el tamaño del círculo Tzolk'in */
+    height: 100px;
     transform-origin: center center; /* Establece el punto de origen en el centro */
     z-index: 2; /* Aseguramos que esté encima del círculo de números */
+    display: flex;
+    justify-content: center; /* Centrado horizontal */
+    align-items: center;
 }
 
 .numeros-circulo {
     filter: invert(100%);
     transform-origin: center center; /* Establece el punto de origen en el centro */
-    width: 400px; /* Ajustamos el tamaño del círculo de números */
-    height: 200px;
+    width: 300px; /* Ajustamos el tamaño del círculo de números */
+    height: 100px;
+    display: flex;
+    justify-content: center; /* Centrado horizontal */
+    align-items: center;
 }
 
 .tzolkin-signo, .numero {

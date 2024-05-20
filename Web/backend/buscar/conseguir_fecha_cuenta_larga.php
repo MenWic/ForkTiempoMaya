@@ -100,11 +100,11 @@ $icon_width = "40px";  // Ajusta el tamaño según sea necesario
         '18' => '<img src="img/numbers/18.png" alt="Número 18 Icon" style="width: ' . $icon_width . '; ' . $icon_color . '">',
         '19' => '<img src="img/numbers/19.png" alt="Número 19 Icon" style="width: ' . $icon_width . '; ' . $icon_color . '">'
     ];
-    $cuenta_larga_con_iconos = $iconos2[$number5] . " " . $iconos['baktun'] . " " .
-    $iconos2[$number4] . " " . $iconos['katun'] . " " .
-    $iconos2[$number3] . " " . $iconos['tun'] . " " .
-    $iconos2[$number2] . " " . $iconos['uinal'] . " " .
-    $iconos2[$number1] . " " . $iconos['kin'];
+    $cuenta_larga_con_iconos =$iconos['baktun'] ."". $iconos2[$number5] . "Baktun" ."<br>".
+    $iconos['katun']." ".$iconos2[$number4] . "Katun". "<br> " .
+    $iconos['tun']." ".$iconos2[$number3] . "Tun ". " <br>" .
+    $iconos['uinal']." ".$iconos2[$number2] . "Uinal". " <br>" .
+    $iconos['kin']. " ".$iconos2[$number1] . "Kin";
     
 //return strval($number5).".".strval($number4)."..".strval($number3).".".strval($number2).".".strval($number1);
 return $cuenta_larga_con_iconos;

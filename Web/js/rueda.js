@@ -3,7 +3,7 @@ document.addEventListener('DOMContentLoaded', () => {
     const numerosCircle = document.getElementById('numerosCircle');
     const currentTzolkinLabel = document.getElementById('currentTzolkin');
     const currentNumeroLabel = document.getElementById('currentNumero');
-    const tolerance = 1;
+    const tolerance = 10;
     const updateCurrentSymbol = (elements, label, type) => {
         const topElement = Array.from(elements).find(element => {
             const angle = parseFloat(element.getAttribute('data-angle')) % 360;

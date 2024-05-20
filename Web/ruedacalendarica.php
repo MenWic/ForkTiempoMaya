@@ -47,8 +47,10 @@ $haab = calcularHaab($fecha);
         <section id="inicio">
             <video src="./img/background.mp4" autoplay="true" muted="true" loop="true"></video>
             <div id="inicioContainer" class="inicio-container">
+                
             <div class="calendario">
         <div class="tzolkin-circulo" id="tzolkinCircle">
+        <div><h4><strong>Rueda Calendarica</strong></h4></div>
             <?php
             for ($i = 0; $i < 20; $i++) {
                 $tzolkin_signos = ["batz", "e", "aj", "ix", "tzikin", "ajmaq", "noj", "tijax", "kawoq", "ajpu", "imox", "iq", "aqabal", "kat", "kan", "kame", "kej", "qanil", "toj", "tzi"];

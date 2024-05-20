@@ -9,9 +9,9 @@ $periodosNav = $conn->query("SELECT nombre FROM tiempo_maya.periodo order by ord
 
 ?>
 <?php include "mensaje.php"; ?>
-<div style="position:fixed;z-index:991; top:7px; left:80px;">
+<div style="position:fixed;z-index:991; top:-1px; left:80px;">
   <a href="index.php">
-    <img alt="" src="./img/logonew.gif" width=160" height="160">
+    <img alt="" src="./img/logonew.gif" width="18%" height="20%">
   </a>
 </div>
 <header id="header" style="padding-left: 600px;">
