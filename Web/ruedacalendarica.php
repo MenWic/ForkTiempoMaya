@@ -50,14 +50,20 @@ $haab = calcularHaab($fecha);
                 
             <div class="calendario">
         <div class="tzolkin-circulo" id="tzolkinCircle">
-        <div><h4><strong>Rueda Calendarica</strong></h4></div>
+        <div>^
+            <h6><strong><br>Rueda Calendarica</strong></h6>
+        <div id="currentSymbol">
+        <label id="currentTzolkin"></label>
+        <label id="currentNumero"></label>
+    </div>
+</div>
             <?php
             for ($i = 0; $i < 20; $i++) {
                 $tzolkin_signos = ["batz", "e", "aj", "ix", "tzikin", "ajmaq", "noj", "tijax", "kawoq", "ajpu", "imox", "iq", "aqabal", "kat", "kan", "kame", "kej", "qanil", "toj", "tzi"];
                 $signo = $tzolkin_signos[$i];
                 $angle = $i * (360 / 20);
                 //$angle = 0;
-                echo "<div class='tzolkin-signo' data-angle='{$angle}' style='transform: rotate({$angle}deg) translate(0, -250px) rotate(-{$angle}deg);'>
+                echo "<div class='tzolkin-signo' data-angle='{$angle}' style='transform: rotate({$angle}deg) translate(0, 400px) rotate(-{$angle}deg);'>
                         <img src='img/nahuales/{$signo}.png' alt='{$signo}'>
                       </div>";
             }
@@ -68,17 +74,18 @@ $haab = calcularHaab($fecha);
             for ($i = 0; $i < 13; $i++) {
                 $numero = $i + 1;
                 $angle = $i * (360 / 13);
-                echo "<div class='numero' data-angle='{$angle}' style='transform: rotate({$angle}deg) translate(0, -150px) rotate(-{$angle}deg);'>
+                echo "<div class='numero' data-angle='{$angle}' style='transform: rotate({$angle}deg) translate(0, -300px) rotate(-{$angle}deg);'>
                         <img src='img/numbers/{$numero}.png' alt='{$numero}'>
                       </div>";
             }
             ?>
         </div>
     </div>
-    <div id="currentSymbol">
-        <label id="currentTzolkin"></label>
-        <label id="currentNumero"></label>
-    </div>
+    <br>
+    <br>
+    <br>
+    <br>
+    
     <script src="js/rueda.js"></script>
             </div>
         </section>

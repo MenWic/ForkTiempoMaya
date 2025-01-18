@@ -1,6 +1,6 @@
 
 .calendario {
-    position: relative;
+    position: initial;
     width: 800px; /* Aumentamos el tamaño del contenedor principal */
     height: 800px;
     margin: auto;

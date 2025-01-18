@@ -37,11 +37,15 @@ $cholquij = $nahual . " " . strval($energia);
       <div id="inicioContainer" class="inicio-container">
         <br><br><br><br><br>
         <h1><br><br>Tiempo Maya</h1><br><br>
-        <img alt="" src="./img/logonew2.png" width=185" height="160">
-        <h5 style="color: whitesmoke;font-size: 18px;">Calendario Haab : <?php echo isset($haab) ? $haab : ''; ?></h5>
-        <h5 style="color: whitesmoke;font-size: 18px;">Calendario Cholquij : <?php echo isset($cholquij) ? $cholquij : ''; ?></h5>
-        <h5 style="color: whitesmoke;font-size: 18px;">Cuenta Larga : <?php echo isset($cuenta_larga) ? $cuenta_larga : ''; ?></h5>
-        <label style="color: whitesmoke;"><?php echo isset($fecha_consultar) ? $fecha_consultar : ''; ?></label>
+        <img alt="" src="./img/logonew2.png" width=185" height="160"><br>
+        <h4 style="color: whitesmoke;">Fecha actual</h4>
+        <h5><?php echo isset($fecha_consultar) ? $fecha_consultar : ''; ?></h5><br>
+        <h5 style="color: whitesmoke;font-size: 18px;">Calendario Haab<br><?php echo isset($haab) ? $haab : ''; ?></h5>
+        <br>
+        <h5 style="color: whitesmoke;font-size: 18px;">Calendario
+          Cholquij<br><?php echo isset($cholquij) ? $cholquij : ''; ?></h5><br>
+        <h5 style="color: whitesmoke;font-size: 18px;">Cuenta
+          Larga<br><br><?php echo isset($cuenta_larga) ? $cuenta_larga : ''; ?></h5>
       </div>
     </section>
     <br><br><br><br>
@@ -63,11 +67,16 @@ $cholquij = $nahual . " " . strval($energia);
               interés acerca de la cultura maya y las herramientas que nos brindan nos ayudan a tener una mejor
               interacción con el usuario, así como puede llegar hacer un canal de comunicación y construcción del
               conocimiento con otros interesados. </p>
-            <img alt="" src="./img/logonew3.png" width="185" height="160">
-            <a href="https://srlabs.a2hosted.com/rs-humhub/index.php?r=wiki%2Fpage%2Fview&title=Proyecto+Tiempo+Maya&cguid=03ab5d70-702f-4844-a654-5f47fd6a1f61">
-              <img alt="" src="./img/srlabs.png" width="400" height="160">
-            </a>
-            <img alt="" src="./img/logonew3.png" width="185" height="160">
+            
+              <div class="foot">
+              <img alt="" src="./img/logonew3.png" width="185" height="160">
+              <a
+                href="https://srlabs.a2hosted.com/rs-humhub/index.php?r=wiki%2Fpage%2Fview&title=Proyecto+Tiempo+Maya&cguid=03ab5d70-702f-4844-a654-5f47fd6a1f61">
+                <img alt="" src="./img/srlabs.png" width="400" height="160">
+              </a>
+              <img alt="" src="./img/logonew3.png" width="185" height="160">
+            </div>
+
           </div>
         </div>
       </div>
